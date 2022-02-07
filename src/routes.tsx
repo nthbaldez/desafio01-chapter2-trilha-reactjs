@@ -6,8 +6,12 @@ import Cart from './pages/Cart';
 const Routes = (): JSX.Element => {
   return (
     <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/cart" component={Cart} />
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/cart">
+        <Cart />
+      </Route>
     </Switch>
   );
 };
